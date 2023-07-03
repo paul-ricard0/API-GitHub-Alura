@@ -19,14 +19,11 @@ def main1():
 
 
 def main2():
-    # instanciando um objeto
     new_repo = ManipulaRepositorios('paul-ricard0')
 
-    # Criando o repositório
     name_repo = 'linguagens-repositorios-empresas'
     new_repo.cria_repo(name_repo, description='Teste socorrroooo!!', private=False)
 
-    # Adicionando arquivos salvos no repositório criado
     path = r'C:\Users\paulo\Documents\Cursos\Alura\Engenharia-de-Dados\projeto-requests\data'
     new_repo.add_arquivo(name_repo, 'linguagens_amzn.csv', arquivo_local=f'{path}\linguagens_amazon.csv',  description='TESTE03')
     new_repo.add_arquivo(name_repo, 'linguagens_netflix.csv', arquivo_local=f'{path}\linguagens_netflix.csv',  description='TESTE02')
